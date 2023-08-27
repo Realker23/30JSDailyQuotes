@@ -1,0 +1,105 @@
+html{
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background: #bbc6fa;
+}
+
+.quoteCard{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:70rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.13);
+    padding: 4rem;
+}
+
+.quoteCard h1{
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.quoteCard h1::after{
+    content: "";
+    background-color: #377ad6;
+    position: absolute;
+    width: 7.5rem;
+    height: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+
+}
+
+.quoteCard blockquote{
+    font-size: 2.6rem;
+    min-height: 11rem;
+}
+
+.quoteCard blockquote::before,.quoteCard blockquote::after{
+    content: '"';
+}
+
+.quoteCard span{
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.quoteCard span::before{
+    content:'';
+    width: 2rem;
+    height: .2rem;
+    background-color: #377ad6;
+    position: absolute;
+    left:-3rem;
+    top: 50%;
+}
+
+.quoteCard div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+.quoteCard div button{
+    background: rgb(23,124, 229);
+    color: #fff;
+    border-radius: 2.5rem;
+    border: 1px solid rgb(23,124, 229);
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.quoteCard div button img{
+    width: 2rem;
+    margin-right: 1rem ;
+}
+
+.quoteCard div button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
